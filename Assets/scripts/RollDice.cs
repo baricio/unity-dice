@@ -11,8 +11,14 @@ public class RollDice : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
     }
 
+    
+    
     void FixedUpdate()
     {
-        rb.AddForce(transform.forward * thrust);
+        //AddTorque(Vector3.Cross(lastPos, initPos) * 1000, orceMode.Impulse); - See more at: http://www.theappguruz.com/blog/roll-a-dice-unity-3d#sthash.xtjMU669.dpuf
+        if (Input.GetMouseButtonDown(0))
+        {
+            rb.AddForce(Vector3.forward * thrust, ForceMode.Acceleration);
+        }
     }
 }
