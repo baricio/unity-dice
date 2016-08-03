@@ -45,7 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Dice\Plugins\Dice.cs" />
+     <Compile Include="Assets\Dice\Plugins\Die.cs" />
+     <Compile Include="Assets\Dice\Scripts\Dice\Die_d10.cs" />
+     <Compile Include="Assets\Dice\Scripts\Dice\Die_d6.cs" />
+     <Compile Include="Assets\Dice\scenes\Demo\AppDemo.cs" />
      <Compile Include="Assets\scripts\RollDice.cs" />
+     <None Include="Assets\Dice\-Read-Me-.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
